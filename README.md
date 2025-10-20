@@ -5,10 +5,15 @@ This script thoroughly test a server's support for TLS Session Resumption for bo
 
 It provides a reliable way to check resumption capabilities, circumventing the known issues with the standard OpenSSL s_client -reconnect command for TLS 1.3 by implementing a robust, two-step Pre-Shared Key (PSK) ticket exchange verification.
 
-*** Features ***
+**Features**
 - Dual Protocol Check: Tests resumption for both TLS 1.2 (using the -reconnect command) and TLS 1.3 (using the two-step -sess_out and -sess_in method).
 - TLS 1.3 Reliability: Accurately confirms TLS 1.3 stateless session reuse (PSK) by verifying the exchange and successful loading of a session ticket.
 - Detailed Output: Provides clear metrics, including initial/final session IDs (for TLS 1.2), PSK ticket status, and confirmation details for a successful resumed connection.
+
+## Usage
+```
+python3 tls_session_resumption.py <url>
+```
 
 ## License Notification
 ```
