@@ -17,7 +17,7 @@ python3 tls_session_resumption.py <url>
 
 ## License Notification
 ```
-Copyright 2024 (Current Year) [Your Name/Organization Here]
+Copyright Defenced B.V.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
